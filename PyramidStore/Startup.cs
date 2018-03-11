@@ -101,6 +101,8 @@ namespace PyramidStore
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(builder => builder.AllowAnyOrigin());
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
